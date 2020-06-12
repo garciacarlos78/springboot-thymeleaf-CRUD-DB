@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Imported data from Bootstrap -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Spring Boot Thymeleaf HTML table</title>
+</head>
+<body>
+<!-- Apply Bootstrap CSS styles -->
+<div class="container">
+    <h3>Employees HTML Thymeleaf Table - Bootstrap CSS</h3>
+    <hr>
+    <!-- Create table applying Bootstrap CSS styles -->
+    <table class="table table-bordered table-striped">
+        <!-- Table header -->
+        <thead class="thead-dark">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Iterate model data to add to table rows -->
+            <tr th:each="employee : ${employees}">
+                <td th:text="${employee.firstName}"/>
+                <td th:text="${employee.lastName}"/>
+                <td th:text="${employee.email}"/>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

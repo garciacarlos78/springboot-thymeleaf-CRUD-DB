@@ -12,7 +12,8 @@ Based in an https://www.udemy.com/course/spring-hibernate-tutorial/ project.
 Base project: https://github.com/garciacarlos78/thymeleaf-html-tables/tree/master/thymeleaf-html-table-css-bootstrap
 
 ## Steps
-1. Modify project's architecture   
+1. Modify project's architecture
+2. Use database data   
 
 ## Step 1 - Modify project's architecture
 Added spring-boot-starter-data-jpa and mysql connector to Gradle.  
@@ -27,5 +28,8 @@ Modified project's architecture:
 - Added *services* package and employee services interface and implementation
 - Still showing in-memory data
  
-
+## Step 2 - Use database data
+- Removed in-memory code
+- Injected service to controller
+- Show data from database, through injected service
 

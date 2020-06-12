@@ -1,6 +1,6 @@
-package com.cgrdev.springbootthymeleafcruddb.controller;
+package com.cgrdev.springbootthymeleafcruddb.controllers;
 
-import com.cgrdev.springbootthymeleafcruddb.model.Employee;
+import com.cgrdev.springbootthymeleafcruddb.entities.Employee;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

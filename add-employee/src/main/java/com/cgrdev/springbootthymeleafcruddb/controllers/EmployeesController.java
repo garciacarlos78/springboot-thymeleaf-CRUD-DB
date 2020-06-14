@@ -36,7 +36,7 @@ public class EmployeesController {
         model.addAttribute("employees", employees);
 
         // return web page
-        return "employees-table";
+        return "/employees/employees-list";
     }
 
     // catch the Add button click
@@ -50,7 +50,7 @@ public class EmployeesController {
         model.addAttribute("employee", employee);
 
         // return add employee form
-        return "add-employee-form";
+        return "/employees/add-employee-form";
     }
 
     // catch save button to save new employee data

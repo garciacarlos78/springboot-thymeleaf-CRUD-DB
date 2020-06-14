@@ -30,3 +30,8 @@ Further details in [/update-employee/README.md](/update-employee/README.md)
 Added logic to delete an employee.  
 Base project: */update-employee*  
 Further details in [/delete-employee/README.md](/delete-employee/README.md)
+
+## /in-memory-authentication
+Added in-memory authentication  
+Base project: */delete-employee*  
+Further details in [/in-memory-authentication/README.md](/in-memory-authentication/README.md)

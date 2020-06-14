@@ -14,4 +14,9 @@ Base project: https://github.com/garciacarlos78/thymeleaf-html-tables/tree/maste
 ## /refactor
 Base project modified to get data from DB.  
 It just shows a bootstrap css styled table with the employees directory.    
-Further details in [README.md](/springboot-thymeleaf-CRUD-DB-Refactor/README.md)
+Further details in [README.md](/refactor/README.md)
+
+## /add-employee
+Added logic to add a new employee.  
+Base project: */refactor*  
+Further details in [/add-employee/README.md]()

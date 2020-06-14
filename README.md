@@ -25,3 +25,8 @@ Further details in [/add-employee/README.md](/add-employee/README.md)
 Added logic to update an employee.  
 Base project: */add-employee*  
 Further details in [/update-employee/README.md](/update-employee/README.md)
+
+## /delete-employee
+Added logic to delete an employee.  
+Base project: */update-employee*  
+Further details in [/delete-employee/README.md](/delete-employee/README.md)

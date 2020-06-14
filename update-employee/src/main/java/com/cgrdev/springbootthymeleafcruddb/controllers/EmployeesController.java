@@ -5,10 +5,7 @@ import com.cgrdev.springbootthymeleafcruddb.services.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
@@ -50,6 +47,21 @@ public class EmployeesController {
         model.addAttribute("employee", employee);
 
         // return add employee form
+        return "/employees/add-employee-form";
+    }
+
+    // catch Update button
+    @GetMapping("/update-employee")
+    public String updateEmployee(@RequestParam("employeeId") int id,
+                                 Model model) {
+
+        // get employee from service
+        Employee employee = employeeService.findById(id);
+
+        // add employee to model
+        model.addAttribute("employee", employee);
+
+        // send over our form
         return "/employees/add-employee-form";
     }
 

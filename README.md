@@ -20,3 +20,8 @@ Further details in [/refactor/README.md](/refactor/README.md)
 Added logic to add a new employee.  
 Base project: */refactor*  
 Further details in [/add-employee/README.md](/add-employee/README.md)
+
+## /update-employee
+Added logic to update an employee.  
+Base project: */add-employee*  
+Further details in [/update-employee/README.md](/add-employee/README.md)

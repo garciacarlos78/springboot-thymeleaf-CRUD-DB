@@ -47,3 +47,9 @@ MANAGER: view list, add employee, update employee
 ADMIN: view list, add employee, update employee, delete employee
 
 Further details in [/in-memory-authentication/README.md](/in-memory-authentication/README.md)
+
+# jdbc-encrypted-authentication
+Changed in-memory authentication by JDBC with encrypted password authentication.  
+Base project: */in-memory-authentication*  
+Same credentials and roles as in base project.  
+Further details in [/jdbc-encrypted-authentication/README.md](/jdbc-encrypted-authentication/README.md)

@@ -32,6 +32,18 @@ Base project: */update-employee*
 Further details in [/delete-employee/README.md](/delete-employee/README.md)
 
 ## /in-memory-authentication
-Added in-memory authentication  
+Added in-memory authentication.    
+Authorize and show resources based on rol.  
 Base project: */delete-employee*  
+
+Users (username - password - rol(s)):  
+employee - employee - EMPLOYEE  
+manager - manager - [EMPLOYEE, MANAGER]  
+admin - admin - [EMPLOYEE, MANAGER, ADMIN]
+  
+Permissions per rol:  
+EMPLOYEE: view employees' list  
+MANAGER: view list, add employee, update employee  
+ADMIN: view list, add employee, update employee, delete employee
+
 Further details in [/in-memory-authentication/README.md](/in-memory-authentication/README.md)
